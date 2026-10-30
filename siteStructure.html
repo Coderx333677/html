@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Layout</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px 0px 10px 0px;
+
+            min-height: 400px;
+            
+        }
+        .content-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px 0px 10px 0px;
+
+            min-height: 400px;
+            
+        }
+
+        .content-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px 0px 10px 0px;
+
+            min-height: 400px;
+            
+        }
+
+         .content-3 {
+            display: grid;
+            grid-template-columns: 1fr ;
+            gap: 10px;
+            padding: 10px 0px 10px 0px;
+
+            min-height: 400px;
+            
+        }
+
+        .column {
+            background-color: wheat;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="navbar">
+        Navbar
+    </div>
+
+    <div class="content">
+
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam temporibus obcaecati quaerat quibusdam voluptatibus.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi, laborum qui debitis fugiat error reiciendis.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Natus culpa est quaerat id nam quas.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="content-1">
+
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam temporibus obcaecati quaerat quibusdam voluptatibus.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi, laborum qui debitis fugiat error reiciendis.
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div class="content-3">
+
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam temporibus obcaecati quaerat quibusdam voluptatibus.
+            </p>
+        </div>
+
+        
+    </div>
+
+
+    <div class="footer">
+        Footer
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+    * {
+        background-color: wheat;
+    }
+
+    #nav{
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        border:2px solid black;
+        background-color: aqua;
+    }
+
+    #nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav ul li{
+        float: left;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: rgb(80, 46, 158);
+    }
+
+    #nav li:hover ul{
+        display: block;
+
+    }
+
+    #nav li:hover {
+        background-color : red;
+    }
+     
+     
+    #nav ul li ul{
+        display: none;
+    }
+
+    #nav li ul li{
+        float: none;
+    }
+</style>
+
+
+
+</head>
+<body>
+
+    <div id="nav">
+        <ul>
+
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>Pages
+                <ul>
+                    <li>Fee</li>
+                    <li>Courses</li>
+                    <li>Programs</li>
+                </ul>
+            </li>
+            <li>About</li>
+
+        </ul>
+    </div>
+
+</body>
+</html>

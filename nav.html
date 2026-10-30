@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* Navigation bar div - blue */
+        #nav {
+            background-color: blue;
+            height: 50px;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* All list items: block, white text */
+        #nav li {
+            display: block;
+            float: left;
+            width: 130px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            background-color: blue;
+        }
+
+        /* Background changes on hover */
+        #nav li:hover {
+            background-color: rgb(0, 139, 79);
+        }
+
+        /* Nested list hidden at first */
+        #nav li ul {
+            display: none;
+        }
+
+        /* Nested list opens on hover */
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* Nested items go one below another */
+        #nav li ul li {
+            float: none;
+        }
+
+        /* Content div - pink */
+        #content {
+            background-color: pink;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+        <ul>
+            <li>HOME</li>
+            <li>HTML & CSS
+                <ul>
+                    <li>Web Design</li>
+                    <li>Login Forms</li>
+                    <li>Card Design</li>
+                    <li>More ▶</li>
+                </ul>
+            </li>
+            <li>JAVASCRIPT</li>
+            <li>ABOUT US</li>
+            <li>CONTACT US</li>
+        </ul>
+    </div>
+
+    <div id="content"></div>
+
+</body>
+</html>

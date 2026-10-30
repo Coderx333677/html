@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Layout · Bootstrap 5</title>
+    
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Minimal custom style to preserve visual identity: subtle backgrounds, spacing */
+        .bg-header-footer {
+            background-color: #add8e6; 
+        }
+        .bg-navbar {
+            background-color: #d3d3d3;
+        }
+        .bg-column {
+            background-color: #f5deb3; 
+        }
+        
+        .column-padding {
+            padding: 1.25rem;
+        }
+        
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header: using bootstrap .text-center and .py-5 for padding, background class -->
+    <header class="bg-header-footer text-center py-5">
+        <h1 class="m-0">Header</h1>
+    </header>
+
+    <!-- Navbar: using .text-center and .py-4 for padding -->
+    <nav class="bg-navbar text-center py-4">
+        <span>Navbar</span>
+    </nav>
+
+    <!-- First content row: 3 columns using Bootstrap grid (row-cols-1 row-cols-md-3) with gap via g-2 -->
+    <div class="container-fluid px-0">
+        <!-- Using row with gutters (gap) and padding top/bottom (py-2) to mimic original spacing -->
+        <div class="row g-2 px-2 py-2 row-cols-1 row-cols-md-3">
+            <div class="col">
+                <div class="bg-column column-padding h-100">
+                    <h2>Column 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam temporibus obcaecati quaerat quibusdam voluptatibus.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-column column-padding h-100">
+                    <h2>Column 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Excepturi, laborum qui debitis fugiat error reiciendis.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-column column-padding h-100">
+                    <h2>Column 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus culpa est quaerat id nam quas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second content row (content-1): 2 columns on medium+, 1 column on mobile -->
+    <div class="container-fluid px-0">
+        <div class="row g-2 px-2 py-2 row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="bg-column column-padding h-100">
+                    <h2>Column 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam temporibus obcaecati quaerat quibusdam voluptatibus.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-column column-padding h-100">
+                    <h2>Column 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Excepturi, laborum qui debitis fugiat error reiciendis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third content row (content-3): 1 column (full width) -->
+    <div class="container-fluid px-0">
+        <div class="row g-2 px-2 py-2 row-cols-1">
+            <div class="col">
+                <div class="bg-column column-padding">
+                    <h2>Column 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam temporibus obcaecati quaerat quibusdam voluptatibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-header-footer text-center py-5">
+        <span>Footer</span>
+    </footer>
+
+   
+</body>
+</html>
